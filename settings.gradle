@@ -63,6 +63,9 @@ settings.gradle.projectsLoaded {
 					new File(buildDir, "build-scan-uri.txt").text = "${scan.buildScanUri}\n"
 				} 
 			}
+			//接受许可协议（不加这个每次编译完成都会询问）
+			termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+			termsOfServiceAgree = 'yes'
 		}
 	}
 }
